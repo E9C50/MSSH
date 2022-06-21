@@ -48,7 +48,7 @@ void ls_server() {
 }
 
 void print_help() {
-    const int nameWidth = 30;
+    const int nameWidth = 40;
 
     cout << "Example usage:" << endl;
     printElement("    mssh ls", nameWidth);
