@@ -70,10 +70,10 @@ void print_help() {
 }
 
 void conn_server(auto server) {
-    string ssh_command = "sshpass -p " + server[4] + " ssh " + server[2] + "@" + server[1];
+    string ssh_command = "./sshpass -p " + server[4] + " ssh " + server[2] + "@" + server[1];
     system(ssh_command.c_str());
 
-    cout << endl << endl << "server disconnect!" << endl;
+    cout << endl << "server disconnect!" << endl;
 }
 
 void conn_server_name(const char *server_name) {
